@@ -25,11 +25,6 @@
 .nav-list {
     display: flex;
     list-style: none;
-    margin: 0;
-    background-color: rgb(37, 37, 37);
-    border: 1px solid rgb(44, 43, 43);
-    border-radius: 25px;
-    align-items: center;
 }
 .nav-item:hover {
     background-color: #1c1c1c;
@@ -39,10 +34,19 @@
     padding: 15px 35px 15px 25px;
     color: rgb(146, 156, 156);
     border-left: 1px solid rgb(10, 10, 10);
+    background-color: rgb(37, 37, 37);
+    border: 1px solid rgb(44, 43, 43);
 }
 .active {
     color: rgb(168, 208, 129);
-    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+.last {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
 }
 .active:hover {
     background-color: #1c1c1c;
@@ -62,7 +66,7 @@
 .btf {
     width: 41%;
     border: 9px solid rgba(240, 240, 240, 0.66);
-    box-shadow: 19px 10px 16px 7px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 19px 10px 16px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .lorem {
     width: 500px;
@@ -85,10 +89,7 @@
     margin-top: 35px;
 }
 .read-more:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.button-parg {
-    font-size: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .main {
     height: 650px;
@@ -110,7 +111,6 @@
     flex-direction:column;
     justify-content: space-around;
 }
-
 .welcome {
     max-width: 55%;
     display: flex;
@@ -121,7 +121,7 @@
     letter-spacing: 1.5px;
     font-size: 25px;
     border-bottom: 1px solid rgb(168, 208, 129);
-    padding-bottom: 2px; 
+    padding-bottom: 2px;
 }
 .em {
     border-bottom: 4px solid rgb(168, 208, 129);
@@ -145,18 +145,17 @@
     background-color: #434343;
     color: aliceblue;
 }
-
 .frangipani {
     width: 90px;
  }
  .news-pard {
     font-size: 20px;
     padding: 17px;
-} 
+}
 .news2-main {
     display: flex;
-    padding-left: 15px;
     align-items: center;
+    padding: 15px;
 }
 .news2-item {
     padding-left: 15px;
